@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav_graph"
+            app:startDestination="@id/mainFragment">
+
+    <fragment android:id="@+id/mainFragment" android:name="android.hibatullah.newsapp.ui.main.MainFragment"
+              android:label="splash_fragment" tools:layout="@layout/splash_fragment">
+        <action android:id="@+id/action_mainFragment_to_dashboardFragment2" app:destination="@id/dashboardFragment2"
+                app:popUpToInclusive="true" app:popUpTo="@+id/mainFragment"/>
+    </fragment>
+    <fragment android:id="@+id/dashboardFragment2" android:name="android.hibatullah.newsapp.ui.main.DashboardFragment"
+              android:label="dashboard_fragment" tools:layout="@layout/dashboard_fragment"/>
+</navigation>
